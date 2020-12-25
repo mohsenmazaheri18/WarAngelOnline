@@ -12,7 +12,7 @@ public class SC_TPSController : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 60.0f;
     [SerializeField]
-    private GameObject[] character;
+    private GameObject character;
     public GameObject camera;
 
     CharacterController characterController;
@@ -61,20 +61,7 @@ public class SC_TPSController : MonoBehaviour
             rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
             playerCameraParent.localRotation = Quaternion.Euler(rotation.x, 0, 0);
             transform.eulerAngles = new Vector2(0, rotation.y);
-
-            character[0].transform.rotation = camera.transform.rotation;
-            character[1].transform.rotation = camera.transform.rotation;
-            character[2].transform.rotation = camera.transform.rotation;
-            character[3].transform.rotation = camera.transform.rotation;
-            character[4].transform.rotation = camera.transform.rotation;
-            character[5].transform.rotation = camera.transform.rotation;
-            character[6].transform.rotation = camera.transform.rotation;
-            character[7].transform.rotation = camera.transform.rotation;
-            character[8].transform.rotation = camera.transform.rotation;
-            character[9].transform.rotation = camera.transform.rotation;
-            character[10].transform.rotation = camera.transform.rotation;
-            character[11].transform.rotation = camera.transform.rotation;
-            character[12].transform.rotation = camera.transform.rotation;
+            character.transform.rotation = camera.transform.rotation;
 
         }
     }

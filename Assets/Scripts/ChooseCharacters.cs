@@ -8,6 +8,9 @@ public class ChooseCharacters : MonoBehaviour
 
     public int numberCharacter = 0;
 
+    
+    public Transform respwn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,7 @@ public class ChooseCharacters : MonoBehaviour
             Characters[10].SetActive(false);
             Characters[11].SetActive(false);
             Characters[12].SetActive(false);
+
         }
         if (numberCharacter == 1)
         {
