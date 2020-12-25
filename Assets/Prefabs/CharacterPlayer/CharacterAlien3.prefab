@@ -5329,6 +5329,8 @@ GameObject:
   - component: {fileID: 615349657537584265}
   - component: {fileID: 1317671996563147109}
   - component: {fileID: 5492600135577285730}
+  - component: {fileID: -3628652922804256964}
+  - component: {fileID: -7592813089215586936}
   m_Layer: 0
   m_Name: CharacterAlien3
   m_TagString: Untagged
@@ -5540,20 +5542,7 @@ MonoBehaviour:
   playerCameraParent: {fileID: 662490522415357981}
   lookSpeed: 2
   lookXLimit: 20
-  character:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 4235142425025185503}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  character: {fileID: 4235142425025185503}
   camera: {fileID: 662490523331056259}
   canMove: 1
 --- !u!114 &5492600135577285730
@@ -5574,10 +5563,43 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: -3628652922804256964}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-3628652922804256964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235142425025185503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &-7592813089215586936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235142425025185503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters: []
+  m_SynchronizeLayers: []
 --- !u!1 &7633612128248349048
 GameObject:
   m_ObjectHideFlags: 0

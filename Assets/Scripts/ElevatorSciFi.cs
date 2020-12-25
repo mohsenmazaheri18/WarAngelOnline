@@ -12,11 +12,13 @@ public class ElevatorSciFi : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    public void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
-
+        if (other.tag=="Player")
+        {
             Debug.Log("Col");
             anim.SetBool("Go", true);
+        }
         
 
     }

@@ -9,73 +9,141 @@ public class PlayerPrefsCharacter : MonoBehaviour
 
     public GameObject[] Respwan;
 
+    Vector3 position;
+
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.GetInt("Characters") == 0)
         {
-            Vector3 position = new Vector3(Random.Range(0,Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[0], position, Quaternion.identity);
+            StartCoroutine(emolator1());
         }
         if (PlayerPrefs.GetInt("Characters") == 1)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[1], position, Quaternion.identity);
+           StartCoroutine(emolator2());
         }
         if (PlayerPrefs.GetInt("Characters") == 2)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[2], position, Quaternion.identity);
+            StartCoroutine(emolator3());
         }
         if (PlayerPrefs.GetInt("Characters") == 3)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[3], position, Quaternion.identity);
+            StartCoroutine(emolator4());
         }
         if (PlayerPrefs.GetInt("Characters") == 4)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[4], position, Quaternion.identity);
+            StartCoroutine(emolator5());
         }
         if (PlayerPrefs.GetInt("Characters") == 5)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[5], position, Quaternion.identity);
+            StartCoroutine(emolator6());
         }
         if (PlayerPrefs.GetInt("Characters") == 6)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[6], position, Quaternion.identity);
+           StartCoroutine(emolator7());
         }
         if (PlayerPrefs.GetInt("Characters") == 7)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[7], position, Quaternion.identity);
+            StartCoroutine(emolator8());
         }
         if (PlayerPrefs.GetInt("Characters") == 8)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[8], position, Quaternion.identity);
+            StartCoroutine(emolator9());
         }
         if (PlayerPrefs.GetInt("Characters") == 9)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[9], position, Quaternion.identity);
+            StartCoroutine(emolator10());
         }
         if (PlayerPrefs.GetInt("Characters") == 10)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[10], position, Quaternion.identity);
+            StartCoroutine(emolator11());
         }
         if (PlayerPrefs.GetInt("Characters") == 11)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[11], position, Quaternion.identity);
+            StartCoroutine(emolator12());
         }
         if (PlayerPrefs.GetInt("Characters") == 12)
         {
-            Vector3 position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
-            Instantiate(Characters[12], position, Quaternion.identity);
+            StartCoroutine(emolator13());
+            
         }
+    }
+    IEnumerator emolator1()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[0], position, Quaternion.identity);
+    }
+    IEnumerator emolator2()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[1], position, Quaternion.identity);
+    }
+    IEnumerator emolator3()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[2], position, Quaternion.identity);
+    }
+    IEnumerator emolator4()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[3], position, Quaternion.identity);
+    }
+    IEnumerator emolator5()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[4], position, Quaternion.identity);
+    }
+    IEnumerator emolator6()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[5], position, Quaternion.identity);
+    }
+    IEnumerator emolator7()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[6], position, Quaternion.identity);
+    }
+    IEnumerator emolator8()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[7], position, Quaternion.identity);
+    }
+    IEnumerator emolator9()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[8], position, Quaternion.identity);
+    }
+    IEnumerator emolator10()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[9], position, Quaternion.identity);
+    }
+    IEnumerator emolator11()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[10], position, Quaternion.identity);
+    }
+    IEnumerator emolator12()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[11], position, Quaternion.identity);
+    }
+    IEnumerator emolator13()
+    {
+        yield return new WaitForSeconds(5f);
+        position = new Vector3(Random.Range(0, Respwan.Length), 0, Random.Range(0, Respwan.Length));
+        Instantiate(Characters[12], position, Quaternion.identity);
     }
 }
